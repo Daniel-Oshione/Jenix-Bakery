@@ -5,7 +5,7 @@
     text-align: center;
     }
     body{
-        background: linear-gradient(to right, #cb9575, #fcb58b,#eebea3, #ce916e);
+        background-color:#eebea3;
         height: 100vh;
     }
     header img {
@@ -15,7 +15,7 @@
         object-fit: cover;
         margin-left: 20px;
     }
-    
+
     .nav  a{
         text-decoration: none;
         padding: 5px 40px;
@@ -77,23 +77,80 @@
     .drop_page{
         background-color: #622402;
     }
+    /* CENTER CONTACT  */
+    .center_contact{
+        position: absolute;
+        top: 60%;
+        left: 38%;
+        background-color:#e9c8b8;
+        box-shadow: 0 0 5px 2px black;
+        padding: 30px 60px 30px 60px ;
+        transform: scale(1.5);
+    }
+    .center_contact h1{
+        margin-bottom: 30px;
+        text-decoration: underline;
+        color: #f16a1c;
+        text-align: left;
+    }
+    .center_contact p {
+        text-align: left;
+    }
+    .details{
+        text-align: left;
+        margin-bottom: 20px;
+        color: #f16a1c;
+        font-weight: bolder;
+    }
+    .details input{
+        text-align: left;
+        padding-left: 5px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 2px 1px 1px 1px black;
+        width: 250px;
+    }
+    .message{
+    box-shadow: 2px 1px 1px 1px black;
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px 0 50px 5px;
+    width: 250px;
+    }
+    .center_contact button{ 
+    border: solid 1px #f16a1c;
+    padding: 5px 100px;
+    }
+    .center_contact button:hover{
+        background-color: #f16a1c;
+        color: white;
+    }
     /* FOOTER */
     footer{
         background-color:  #f16a1c;
-        padding: 50px 0 0 0;
+        padding: 50px 0 30px 0;
         color: wheat;
+        position: relative;
+        top: 1000px;
     }
     .socials_logo{
         margin: 0 20px;
+    
     }
     .socials_logo:hover{
-        padding: 0 5px 0 0;
+        padding: 0 10px;
         transition: 250ms;
+    }
+    .copyright{
+        margin: 20px 0;
     }
     @media (max-width: 992px){
         header img {
             width: 100px;
             height: 100px;
+        }
+        .center_contact{
+            left: 30%;
         }
     }
     @media (max-width: 750px){
@@ -120,6 +177,12 @@
       }
       .copyright{
         margin-top: 10px;
+      }
+      .center_contact{
+        left: 25%;
+      }
+      .center_contact{
+        transform: scale(0.9);
       }
     }
     
