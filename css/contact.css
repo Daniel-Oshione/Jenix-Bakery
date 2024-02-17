@@ -144,6 +144,9 @@
         position: relative;
         top: 300px;
     }
+    .footer_text{
+        padding: 0 20px;
+    }
     .socials_logo{
         margin: 0 20px;
     
