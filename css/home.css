@@ -84,24 +84,24 @@ overflow: hidden;
 .slides{
 overflow: hidden;
 margin-bottom: 50px;
+box-shadow: 20px 1px 20px 1px black;
 }
 .img_container img{
 height: 400px;
 width: 400px;
 object-fit: cover;
 padding: 7px 15px 0 0;
-box-shadow: 2px 10px 10px 2px black;
 }
 /* slide animation */
 @-webkit-keyframes slide_animation{
     0%{left:0px;}
     10%{left:0px;}
-    20%{left:1200px;}
-    30%{left:1200px;}
-    40%{left:2400px;}
-    50%{left:2400px;}
-    60%{left:1200px;}
-    70%{left:1200px;}
+    20%{left:500px;}
+    30%{left:1000px;}
+    40%{left:1500px;}
+    50%{left:1500px;}
+    60%{left:1000px;}
+    70%{left:500px;}
     80%{left:0px;}
     90%{left:0px;}
     100%{left:0px;}
@@ -134,10 +134,23 @@ box-shadow: 2px 10px 10px 2px black;
     display: flex;
     justify-content: space-evenly;
 }
+@-webkit-keyframes midtextone{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .mid_text_one{
     text-align: left;
     margin-top: 100px;
     font-size: 25px;
+    opacity: 0;
+    animation: slide-in 2s ease-in-out forwards;
+    -webkit-animation-name: midtextone;
 }
 .mid_img{
 width: 400px;
