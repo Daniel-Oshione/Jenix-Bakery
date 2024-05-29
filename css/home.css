@@ -137,12 +137,6 @@ padding: 7px 15px 0 0;
     display: flex;
     justify-content: space-evenly;
 }
-.map{
-    margin-right: 650px;
-    position: relative;
-    bottom: 300px;
-    margin-bottom: -200px;
-}
 @-webkit-keyframes midtextone{
     0%{
         opacity: 0;
@@ -175,17 +169,10 @@ padding: 7px 15px 0 0;
 .mid_img{
 overflow: hidden;
 width: 500px;
-height: 600px;
+height: 500px;
 object-fit: contain;
-border-radius: 5%;
-transition: 500ms;
-position: relative;
-top:50px;
 animation: slide-in 2s ease-in-out forwards;
 -webkit-animation-name: midtextone_img;
-}
-.mid_img:hover{
-    transform:scale(1.1);
 }
 /* mid section two */
 .featured{
