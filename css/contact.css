@@ -76,6 +76,8 @@
         justify-content: center;
         height: 100px;
         overflow: hidden;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
     }
     .drop_page{
         background-color: #622402;

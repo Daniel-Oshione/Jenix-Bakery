@@ -77,6 +77,8 @@ overflow: hidden;
     justify-content: center;
     height: 100px;
     overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
 }
 .drop_page{
     background-color: #622402;
@@ -463,6 +465,7 @@ footer{
       /* mid content */
       .welcome{
         padding: 30px 30px;
+        font-size: 25px;
       }
       .mid_content_one{
         margin-top: -130px ;
@@ -515,13 +518,13 @@ footer{
     }
     .mid_content_two img{
         width: 100px;
-        height: 100px;
+        height: 100 px;
       }
       .socials_logo img{
         transform: scale(0.6);
         margin: 0 10px 0 4px ;
       }
       .feedback_img a img{
-        width: 200px;
+        width: 250px;
     }
 }
