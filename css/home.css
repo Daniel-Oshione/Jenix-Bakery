@@ -521,8 +521,8 @@ footer{
         width: 200px;
     }
     .mid_content_two img{
-        width: 100px;
-        height: 100 px;
+        width: 140px;
+        height: 80 px;
       }
       .socials_logo img{
         transform: scale(0.6);
@@ -531,4 +531,10 @@ footer{
       .feedback_img a img{
         width: 250px;
     }
+}
+@media (max-width: 360px){
+    .mid_content_two img{
+        width: 100px;
+        height: 110px;
+      }
 }
