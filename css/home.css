@@ -18,7 +18,11 @@ header img {
     object-fit: cover;
     margin-left: 20px;
 }
-
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
 .nav  a{
     text-decoration: none;
     padding: 5px 40px;
