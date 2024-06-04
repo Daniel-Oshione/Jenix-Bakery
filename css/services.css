@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    font-family: "Sevillana", cursive;
+    font-family: "Playfair Display", serif;
     }
     body{
         background: linear-gradient(to right, #cb9575, #fcb58b,#eebea3, #ce916e);
@@ -16,12 +16,7 @@
         object-fit: cover;
         margin-left: 20px;
     }
-    header{
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-    
+       
     .nav  a{
         text-decoration: none;
         padding: 5px 40px;
@@ -85,6 +80,35 @@
     }
     .drop_page{
         background-color: #622402;
+    }
+    /* secondary nav bar */
+    .secondary_nav{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    .secondary_nav a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        padding: 10px 30px;
+        border-radius: 20px;
+        background-color:   #de550c;
+    }
+    .secondary_nav_content{
+        overflow-x: hidden;
+    }
+    /* for the bread content */
+    .bread{
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .bread img{
+     width: 200px;
+     height: 300px;
+     object-fit: cover;
     }
     /* FOOTER */
     footer{
