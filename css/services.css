@@ -84,8 +84,9 @@
     /* secondary nav bar */
     .secondary_nav{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         margin-top: 30px;
+        padding: 0 50px;
     }
     .secondary_nav a{
         text-decoration: none;
@@ -101,14 +102,153 @@
     /* for the bread content */
     .bread{
         margin-top: 70px;
-        display: flex;
-        justify-content: space-evenly;
+        padding: 0 50px;
     }
-    
     .bread img{
-     width: 200px;
-     height: 300px;
-     object-fit: cover;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 3px solid #de550c;
+    }
+    .parent_a{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+    .child_a{
+        background-color: wheat;
+        padding: 0 0 30px 0;
+        margin: 20px;
+    }
+    .child_a:hover{
+        background-color: #de550c;
+        transition: 500ms;
+        color: white;
+    }
+    .parent_b{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    /* code for cakes section */
+    @-webkit-keyframes intro{
+     0%{
+        opacity: 0;
+        transform: translateX(100%);
+     }
+     100%{
+        opacity: 1;
+        transform: translateX(0);
+     }
+    }
+    .parent_cake_a{
+        padding: 0 50px;
+        margin-top: 60px;
+        -webkit-animation-name: intro;
+        -webkit-animation-duration: 2s;
+    }
+    .parent_cake_a h1{
+        text-align: left;
+        text-decoration: underline #de550c;
+        padding-left: 50px;
+        margin-bottom: 50px;
+    }
+    .bday_cakes img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 3px solid #de550c;
+        background-color: wheat;   
+        margin: 20px;
+    }
+    .bday_cakes{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+        @-webkit-keyframes intro_b{
+     0%{
+        opacity: 0;
+        transform: translateX(-100%);
+     }
+     100%{
+        opacity: 1;
+        transform: translateX(0);
+     }
+    }
+    .parent_cake_b{
+        padding: 0 50px;
+        margin-top: 60px;
+        -webkit-animation-name: intro_b;
+        -webkit-animation-duration: 2s;
+    }
+    .parent_cake_b h1{
+        text-align: left;
+        text-decoration: underline #de550c;
+        padding-left: 50px;
+        margin-bottom: 50px; 
+    }
+    .parent_cake_b img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 3px solid #de550c;
+        background-color: wheat;   
+        margin: 20px;
+    }
+    .fruit_cakes{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    /* code for snacks section */
+            @-webkit-keyframes intro_b{
+     0%{
+        opacity: 0;
+        transform: translateX(-100%);
+     }
+     100%{
+        opacity: 1;
+        transform: translateX(0);
+     }}
+    .snacks{
+        padding: 0 50px;
+        margin-top: 60px;
+        -webkit-animation-name:intro_b;
+        -webkit-animation-duration: 2s;
+    }
+    .snacks img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 3px solid #de550c;
+        background-color: wheat;   
+        margin: 20px;
+    }
+    /* code for parfaits */
+    @-webkit-keyframes intro_b{
+        0%{
+           opacity: 0;
+           transform: translateX(-100%);
+        }
+        100%{
+           opacity: 1;
+           transform: translateX(0);
+        }}
+    .parfait{
+        padding: 0 50px;
+        margin-top: 60px;
+        -webkit-animation-name:intro_b;
+        -webkit-animation-duration: 2s; 
+    }
+    .parfait img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 3px solid #de550c;
+        background-color: wheat;   
+        margin: 20px;
     }
     /* FOOTER */
     footer{
@@ -130,13 +270,43 @@
     .copyright{
         margin: 20px 0;
     }
+    @media (max-width:1059px) {
+        .parent_cake_a h1{
+            text-align: center;
+            padding-left: 0;
+        }
+        .parent_cake_b h1{
+            text-align: center;
+            padding-left: 0;
+        }
+        .bread img{
+            width: 300px;
+            height: 300px;
+        }
+        .bday_cakes img{
+            width: 300px;
+            height: 300px;
+        }
+        .fruit_cakes img{
+            width: 300px;
+            height: 300px;
+        }
+        .snacks img{
+            width: 300px;
+            height: 300px;
+        }
+        .parfait img{
+            width: 300px;
+            height: 300px;
+        }
+    }
     @media (max-width: 992px){
         header img {
             width: 100px;
             height: 100px;
         }
     }
-    @media (max-width: 750px){
+    @media (max-width: 800px){
         .nav a{
             display: none;
         }
@@ -161,5 +331,114 @@
         .copyright{
             margin-top: 10px;
           }
+    }
+    @media (max-width:580px) {
+        .parent_cake_a h1{
+        font-size: 20px;
+        }
+        .parent_cake_b h1{
+        font-size: 20px;
+        }
+        .bread img{
+            width: 200px;
+            height: 200px;
+        }
+        .bday_cakes img{
+            width: 200px;
+            height: 200px;
+        }
+        .fruit_cakes img{
+            width: 200px;
+            height: 200px;
+        }
+        .snacks img{
+            width: 200px;
+            height: 200px;
+        }
+        .parfait img{
+            width: 200px;
+            height: 200px;
+        }
+         .secondary_nav a{
+          transform: scale(0.8);
+         }
+    }
+    @media (max-width:478px) {
+        .secondary_nav{
+            margin-left: -30px;
+        }
+    }
+    @media (max-width:442px){
+        .secondary_nav a{
+            transform: scale(0.6);
+        }
+        .secondary_nav{
+            transform: scale(0.8);
+            margin-left: -60px;
+        }
+    }
+    @media (max-width:390px){
+        .secondary_nav{
+            transform: scale(0.7);
+            margin-left: -80px;
+        }
+        .bread img{
+            width: 150px;
+            height: 150px;
+        }
+        .bday_cakes img{
+            width: 150px;
+            height: 150px;
+        }
+        .fruit_cakes img{
+            width: 150px;
+            height: 150px;
+        }
+        .snacks img{
+            width: 150px;
+            height: 150px;
+        }
+        .parfait img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    @media(max-width:320px){
+        .secondary_nav{
+            transform: scale(0.6);
+            margin-left: -90px;
+        }
+        .bread img{
+            width: 100px;
+            height: 100px;
+        }
+        .bday_cakes img{
+            width: 100px;
+            height: 100px;
+        }
+        .fruit_cakes img{
+            width: 100px;
+            height: 100px;
+        }
+        .snacks img{
+            width: 100px;
+            height: 100px;
+        }
+        .parfait img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    @media(max-width:272px){
+        .secondary_nav{
+            transform: scale(0.5);
+            margin-left: -95px;
+        }
+        .parent_cake_a h1{
+            font-size: 15px;
+        }
+        .parent_cake_b h1{
+            font-size: 15px;
+        }
     }
     
