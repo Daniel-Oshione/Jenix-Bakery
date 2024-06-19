@@ -332,13 +332,7 @@
             margin-top: 10px;
           }
     }
-    @media (max-width:580px) {
-        .parent_cake_a h1{
-        font-size: 20px;
-        }
-        .parent_cake_b h1{
-        font-size: 20px;
-        }
+    @media (max-width:779px){
         .bread img{
             width: 200px;
             height: 200px;
@@ -359,22 +353,109 @@
             width: 200px;
             height: 200px;
         }
+    }
+    @media (max-width:580px) {
+        .parent_cake_a h1{
+        font-size: 20px;
+        }
+        .parent_cake_b h1{
+        font-size: 20px;
+        }
+        .bread img{
+            width: 150px;
+            height: 150px;
+        }
+        .bday_cakes img{
+            width: 150px;
+            height: 150px;
+        }
+        .fruit_cakes img{
+            width: 150px;
+            height: 150px;
+        }
+        .snacks img{
+            width: 150px;
+            height: 150px;
+        }
+        .parfait img{
+            width: 150px;
+            height: 150px;
+        }
          .secondary_nav a{
           transform: scale(0.8);
          }
     }
-    @media (max-width:478px) {
+    @media (max-width:482px) {
         .secondary_nav{
             margin-left: -30px;
         }
-    }
-    @media (max-width:442px){
-        .secondary_nav a{
-            transform: scale(0.6);
+        .bread img{
+            width: 130px;
+            height: 130px;
         }
+        .bday_cakes img{
+            width: 130px;
+            height: 130px;
+        }
+        .fruit_cakes img{
+            width: 130px;
+            height: 130px;
+        }
+        .snacks img{
+            width: 130px;
+            height: 130px;
+        }
+        .parfait img{
+            width: 130px;
+            height: 130px;
+        }
+    }
+    @media (max-width:443px){
         .secondary_nav{
-            transform: scale(0.8);
-            margin-left: -60px;
+            transform: scale(0.9);
+            margin-left: -40px;
+        }
+        .bread img{
+            width: 120px;
+            height: 120px;
+        }
+        .bday_cakes img{
+            width: 120px;
+            height: 120px;
+        }
+        .fruit_cakes img{
+            width: 120px;
+            height: 120px;
+        }
+        .snacks img{
+            width: 120px;
+            height: 120px;
+        }
+        .parfait img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+    @media (max-width:423px){
+        .bread img{
+            width: 120px;
+            height: 120px;
+        }
+        .bday_cakes img{
+            width: 120px;
+            height: 120px;
+        }
+        .fruit_cakes img{
+            width: 120px;
+            height: 120px;
+        }
+        .snacks img{
+            width: 120px;
+            height: 120px;
+        }
+        .parfait img{
+            width: 120px;
+            height: 120px;
         }
     }
     @media (max-width:390px){
