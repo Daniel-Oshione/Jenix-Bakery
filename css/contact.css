@@ -90,7 +90,7 @@
         width: 600px;
         background-color:#e9c8b8;
         border-radius: 5px;
-        box-shadow: 0 0 5px 2px black;
+        box-shadow: 0 0 5px 2px #622402;
         padding: 30px 60px 30px 60px;
     }
     .center_contact h1{
@@ -177,19 +177,7 @@
             left: 200px;
         }
     }
-    @media (max-width: 992px){
-        header img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-    @media (max-width: 850px){
-        .center_contact{
-            left: 120px;
-        }
-    }
-        /* end of responivity for .center_contact only continues in 750px below */
-    @media (max-width: 750px){
+    @media (max-width:1024px){
         .nav a{
             display: none;
         }
@@ -204,6 +192,20 @@
         .drop_down.visible {
             display: block;
           }
+    }
+    @media (max-width: 992px){
+        header img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    @media (max-width: 850px){
+        .center_contact{
+            left: 120px;
+        }
+    }
+        /* end of responivity for .center_contact only continues in 750px below */
+    @media (max-width: 750px){
                 /* footer */
       footer{
         font-size: 8px;
