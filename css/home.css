@@ -290,6 +290,22 @@ border-radius: 30px;
     border-radius: 20px;
     box-shadow: -4px -4px 5px 0 #853003;
 }
+@-webkit-keyframes check_out_transition{
+    0%{
+       color:#f16a1c; 
+       transition: 500ms;
+       
+    }
+    100%{
+        color: black;
+        transition: 500ms;
+    }
+}
+.check_out{
+-webkit-animation-name: check_out_transition;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-duration: 2s;
+}
 /* FOOTER */
 footer{
     background-color:  #f16a1c;
@@ -301,11 +317,6 @@ footer{
 }
 .socials_logo{
     margin: 0 20px;
-
-}
-.socials_logo:hover{
-    padding: 0 10px;
-    transition: 250ms;
 }
 .copyright{
     margin: 20px 0;
