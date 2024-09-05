@@ -6,7 +6,7 @@ text-align: center;
 font-family: "Playfair Display", serif;
 }
 body{
-    background: linear-gradient(to right, #cb9575, #fcb58b,#eebea3, #ce916e);
+    background: linear-gradient(to right, #eebea3, #ce916e);
     height: 100vh;
     overflow-x: hidden;
 }
@@ -244,7 +244,7 @@ border-radius: 30px;
 }
 .food_details_b_images{
     -webkit-animation-name: food_details_b;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 4s;
 }
 @-webkit-keyframes food_details_c{
     0% {
@@ -258,7 +258,7 @@ border-radius: 30px;
 }
 .food_details_c_images{
     -webkit-animation-name: food_details_c;
-    -webkit-animation-duration: 7s;
+    -webkit-animation-duration: 5s;
 }
 @-webkit-keyframes food_details_d{
     0% {
@@ -271,8 +271,8 @@ border-radius: 30px;
     }
 }
 .food_details_d_images{
-    -webkit-animation-name: food_details_b;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-name: food_details_d;
+    -webkit-animation-duration: 6s;
 }
 .feedback{
     margin: 50px 0;
@@ -288,23 +288,29 @@ border-radius: 30px;
 .feedback_img a img{
     border: 1px solid #f16a1c;
     border-radius: 20px;
+}
+.feedback_img a img:hover{
     box-shadow: -4px -4px 5px 0 #853003;
+    transition: 500ms;
 }
 @-webkit-keyframes check_out_transition{
     0%{
        color:#f16a1c; 
        transition: 500ms;
-       
     }
-    100%{
+    50%{
         color: black;
         transition: 500ms;
+    }
+    100%{
+        color:#f16a1c; 
+       transition: 500ms;
     }
 }
 .check_out{
 -webkit-animation-name: check_out_transition;
 -webkit-animation-iteration-count: infinite;
--webkit-animation-duration: 2s;
+-webkit-animation-duration: 3s;
 }
 /* FOOTER */
 footer{

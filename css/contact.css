@@ -6,7 +6,7 @@
     font-family: "Playfair Display", serif;
     }
     body{
-        background-color:#eebea3;
+        background: linear-gradient(to right, #eebea3, #ce916e);
         height: 100vh;
         overflow-x: hidden;
     }

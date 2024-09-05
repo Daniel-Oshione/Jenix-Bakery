@@ -6,7 +6,7 @@
     font-family: "Playfair Display", serif;
     }
     body{
-        background: linear-gradient(to right, #cb9575, #fcb58b,#eebea3, #ce916e);
+        background: linear-gradient(to right, #eebea3, #ce916e);
         height: 100vh;
     }
     header img {
@@ -261,7 +261,6 @@
     }
     .socials_logo{
         margin: 0 20px;
-    
     }
     .copyright{
         margin: 20px 0;
