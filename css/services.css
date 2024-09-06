@@ -115,11 +115,23 @@
         object-fit: cover;
         border-radius: 10px;
     }
+    @-webkit-keyframes bread_into{
+        0%{
+           opacity: 0;
+           transform: translateY(100%);
+        }
+        100%{
+           opacity: 1;
+           transform: translateY(0);
+        }
+       }
     .child_a{
         background-color: wheat;
         padding: 5px 5px 10px 5px;
         margin: 20px;
         border-radius: 10px;
+        -webkit-animation-name: bread_intro;
+        -webkit-animation-duration: 2s;
     }
     .child_a:hover{
         transition: 500ms;
