@@ -348,6 +348,7 @@ footer {
 }
 .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 1214px) {
   .food_details_a h3 {

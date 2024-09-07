@@ -153,12 +153,14 @@ footer {
 }
 .footer_text {
   padding: 0 20px;
+  font-size: 20px;
 }
 .socials_logo {
   margin: 0 20px;
 }
 .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 /* start of responivity for .center_contact only */
 @media (max-width: 1187px) {

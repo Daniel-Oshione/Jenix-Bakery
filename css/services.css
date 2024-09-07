@@ -85,7 +85,8 @@ header img {
   display: flex;
   justify-content: space-around;
   margin: 30px 0;
-  padding: 0 50px;
+  padding: 0 50px 20px 50px;
+  border-bottom: 3px solid #f16a1c;
 }
 .secondary_nav a {
   text-decoration: none;
@@ -101,7 +102,7 @@ header img {
 }
 /* for the bread content */
 .bread {
-  margin: 70px 0 70px 0;
+  margin: 0 0 70px 0;
   padding: 0 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -114,23 +115,20 @@ header img {
   object-fit: cover;
   border-radius: 10px;
 }
-@-webkit-keyframes bread_into {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .child_a {
   background-color: wheat;
-  padding: 5px 5px 10px 5px;
+  padding: 7px 7px 10px 7px;
   margin: 20px;
   border-radius: 10px;
-  -webkit-animation-name: bread_intro;
-  -webkit-animation-duration: 2s;
+  cursor: pointer;
+}
+.child_a h2{
+  font-size: 19px;
+}
+.child_a h2,p{
+  text-align: left;
+  margin: 5px 0;
+  font-weight: 600;
 }
 .child_a:hover {
   transition: 500ms;
@@ -167,6 +165,7 @@ header img {
   padding: 10px;
   border-radius: 10px;
   margin: 20px;
+  cursor: pointer;
 }
 .bday_cakes img:hover {
   transition: 500ms;
@@ -190,7 +189,7 @@ header img {
 }
 .parent_cake_b {
   padding: 0 50px;
-  margin-top: 60px;
+  margin: 60px 0;
   -webkit-animation-name: intro_b;
   -webkit-animation-duration: 2s;
 }
@@ -208,6 +207,7 @@ header img {
   padding: 10px;
   border-radius: 10px;
   margin: 20px;
+  cursor: pointer;
 }
 .parent_cake_b img:hover {
   transition: 500ms;
@@ -237,6 +237,7 @@ header img {
   justify-items: center;
   padding: 0 50px;
   margin-top: 60px;
+  cursor: pointer;
   -webkit-animation-name: intro_b;
   -webkit-animation-duration: 2s;
 }
@@ -286,6 +287,7 @@ footer {
   color: wheat;
 }
 .footer_text {
+  font-size: 20px;
   padding: 0 20px;
 }
 .socials_logo {
@@ -293,6 +295,7 @@ footer {
 }
 .copyright {
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 1059px) {
   .parent_cake_a h1 {
