@@ -591,6 +591,12 @@ margin-left: 10px;
     height: 200px;
   }
 }
+@media (max-width: 364px){
+    .socials_logo img {
+        transform: scale(0.6);
+        margin: 0 -10px;
+      }
+}
 @media (max-width: 356px) {
   .secondary_nav {
     transform: scale(0.7);

@@ -263,11 +263,11 @@ footer {
     margin-left: -90px;
   }
 }
-@media (max-width: 361px) {
-  .socials_logo img {
-    transform: scale(0.7);
-    margin: 0 10px;
-  }
+@media (max-width: 364px){
+    .socials_logo img {
+        transform: scale(0.6);
+        margin: 0 -10px;
+      }
 }
 @media (max-width: 347px) {
   .center_contact {
