@@ -82,23 +82,31 @@ header img {
 }
 /* secondary nav bar */
 .secondary_nav {
-  display: flex;
-  justify-content: space-around;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   margin: 30px 0;
-  padding: 0 50px 20px 50px;
-  border-bottom: 3px solid #f16a1c;
+  padding: 0 100px;
 }
 .secondary_nav a {
   text-decoration: none;
-  color: white;
+  color: #ffff;
   font-weight: bolder;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 20px;
   background-color: #de550c;
+  align-items: center;
+}
+.secondary_nav a:hover{
+box-shadow: 2px 2px 2px 2px #853003;
+transition: 300ms;
+}
+.secondary_nav a.show-shadow{
+    box-shadow: 2px 2px 2px 2px #853003;
 }
 .secondary_nav_content {
   overflow-x: hidden;
-  margin-right: 50px;
 }
 /* for the bread content */
 .bread {
@@ -121,6 +129,18 @@ header img {
   margin: 20px;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-animation-name: intro-child;
+  -webkit-animation-duration: 2s;
+}
+@-webkit-keyframes intro-child {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .child_a h2{
   font-size: 19px;
@@ -138,16 +158,16 @@ header img {
 @-webkit-keyframes intro {
   0% {
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateY(10%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .parent_cake_a {
   padding: 0 50px;
-  margin-top: 60px;
+  margin-top: 20px;
   -webkit-animation-name: intro;
   -webkit-animation-duration: 2s;
 }
@@ -155,7 +175,7 @@ header img {
   text-align: left;
   text-decoration: underline #de550c;
   padding-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .bday_cakes img {
   width: 200px;
@@ -180,11 +200,11 @@ header img {
 @-webkit-keyframes intro_b {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateY(10%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .parent_cake_b {
@@ -223,11 +243,11 @@ header img {
 @-webkit-keyframes intro_b {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateY(20%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .snacks {
@@ -236,7 +256,7 @@ header img {
   align-items: center;
   justify-items: center;
   padding: 0 50px;
-  margin-top: 60px;
+  margin: 30px 0 60px 0;
   cursor: pointer;
   -webkit-animation-name: intro_b;
   -webkit-animation-duration: 2s;
@@ -245,20 +265,20 @@ header img {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  background-color: wheat;
-  padding: 10px;
   border-radius: 10px;
   margin: 20px;
+  background-color:wheat;
+  padding: 10px;
 }
 /* code for parfaits */
 @-webkit-keyframes intro_b {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateY(20%);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 .parfait {
@@ -267,7 +287,7 @@ header img {
   align-items: center;
   justify-items: center;
   padding: 0 50px;
-  margin-top: 60px;
+  margin: 30px 0 60px 0;
   -webkit-animation-name: intro_b;
   -webkit-animation-duration: 2s;
 }
@@ -377,36 +397,21 @@ footer {
   }
 }
 @media (max-width: 779px) {
-  .bread {
-    margin-left: 30px;
-  }
   .bread img {
     width: 200px;
     height: 200px;
-  }
-  .bday_cakes {
-    margin-left: 30px;
   }
   .bday_cakes img {
     width: 200px;
     height: 200px;
   }
-  .fruit_cakes {
-    margin-left: 30px;
-  }
   .fruit_cakes img {
     width: 200px;
     height: 200px;
   }
-  .snacks {
-    margin-left: 30px;
-  }
   .snacks img {
     width: 200px;
     height: 200px;
-  }
-  .parfait {
-    margin-left: 30px;
   }
   .parfait img {
     width: 200px;
@@ -422,6 +427,11 @@ footer {
         width: 180px;
         height: 200px;
     }
+}
+@media (max-width:640px){
+  .secondary_nav{
+    padding: 0 50px;
+  }
 }
 @media (max-width: 623px){
     .snacks img{
@@ -487,15 +497,12 @@ footer {
     height: 200px;
   }
 }
-@media (max-width: 514px) {
-  .bread {
-    margin-left: -1px;
-  }
+@media (max-width: 534px) {
+.secondary_nav{
+  gap: 10px;
+}
 }
 @media (max-width: 482px) {
-  .secondary_nav {
-    margin-left: -30px;
-  }
   .bread img {
     width: 130px;
     height: 130px;
@@ -508,11 +515,13 @@ footer {
     width: 130px;
     height: 130px;
   } 
+  .secondary_nav{
+      padding: 0 20px;
+  }
 }
 @media (max-width: 443px) {
   .secondary_nav {
     transform: scale(0.9);
-    margin-left: -40px;
   }
   .bread img {
     width: 120px;
@@ -529,9 +538,6 @@ footer {
     width: 120px;
     height: 120px;
   }
-  .parfait img {
-margin-left: 10px;
-  }
 }
 @media (max-width: 423px) {
   .bread img {
@@ -546,20 +552,22 @@ margin-left: 10px;
     width: 100px;
     height: 100px;
   }
+    .secondary_nav{
+      padding: 0;
+    }
 }
 @media (max-width: 419px) {
   .secondary_nav {
-    margin-left: -50px;
+
   }
 }
 @media (max-width: 400px) {
     .secondary_nav {
         transform: scale(0.8);
-        margin-left: -65px;
+       
       }
   .bread {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 20px;
   }
   .bday_cakes {
     grid-template-columns: repeat(1, 1fr);
@@ -594,6 +602,16 @@ margin-left: 10px;
     height: 200px;
   }
 }
+@media (max-width:370px){
+    .secondary_nav{
+      margin-right: 30px;
+    }
+}
+@media (max-width:360px){
+    .secondary_nav{
+      margin-left: -10px;
+    }
+}
 @media (max-width: 364px){
     .socials_logo img {
         transform: scale(0.6);
@@ -604,35 +622,20 @@ margin-left: 10px;
   .secondary_nav {
     transform: scale(0.7);
   }
-  .bread {
-    margin-left: 3px;
-  }
-  .bday_cakes {
-    margin-left: 5px;
-  }
-  .fruit_cakes {
-    margin-left: 3px;
-  }
-  .snacks {
-    margin-left: 3px;
-  }
-  .parfait {
-    margin-left: 3px;
-  }
 }
 @media (max-width: 340px) {
   .secondary_nav {
-    margin-left: -80px;
+    /* margin-left: -80px; */
   }
 }
 @media (max-width: 320px) {
   .secondary_nav {
-    margin-left: -70px;
+    /* margin-left: -70px; */
   }
 }
 @media (max-width: 300px) {
   .secondary_nav {
-    margin-left: -80px;
+    /* margin-left: -80px; */
   }
 }
 @media (max-width: 272px) {
