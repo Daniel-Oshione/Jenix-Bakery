@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleButton.addEventListener('click', function() {
     dropDown.classList.toggle('visible');
   });
+
+  document.addEventListener('click', function(event) {
+    if (event.target !== toggleButton && event.target !== dropDown) {
+      dropDown.classList.remove('visible');
+    }
+  });
 });
 
 // for the services page
