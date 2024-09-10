@@ -107,6 +107,7 @@ transition: 300ms;
 }
 .secondary_nav_content {
   overflow-x: hidden;
+  height: 100vh;
 }
 /* for the bread content */
 .bread {
