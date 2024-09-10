@@ -150,7 +150,8 @@ header img {
   outline: none;
 }
 .center_contact button {
-  color: #f16a1c;
+  color: white;
+  background-color:#f16a1c ;
   border: solid 1px #f16a1c;
   padding: 5px 100px;
   position: relative;
@@ -160,7 +161,8 @@ header img {
   cursor: pointer;
 }
 .center_contact button:hover {
-  background-color: #f16a1c;
+  background-color:#c95714 ;
+  border: none;
   color: white;
 }
 /* FOOTER */
